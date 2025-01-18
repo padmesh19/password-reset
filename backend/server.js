@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://password-reset-padmesh.netlify.app",
   credentials: true, //access-control-allow-credentials:true
   optionSuccessStatus: 200,
 };
