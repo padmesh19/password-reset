@@ -2,23 +2,23 @@ import { useState } from "react";
 import axios from "axios";
 
 function ForgetPassword() {
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
-    const [errMessage, setErrMessage] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [errMessage, setErrMessage] = useState("");
 
   const handleSubmit = async (e) => {
-      e.preventDefault();
-      
+    e.preventDefault();
+
     try {
-        const response = await axios.post(
-          `https://password-reset-3i0a.onrender.com//api/auth/forget-password`,
-          { email }
-        );
-        setMessage(response.data.message);
-        setErrMessage("");
+      const response = await axios.post(
+        `https://password-reset-3i0a.onrender.com/api/auth/forget-password`,
+        { email }
+      );
+      setMessage(response.data.message);
+      setErrMessage("");
     } catch (err) {
-        setMessage(err.response.data.error);
-        setErrMessage(err.response.data.error);
+      setMessage(err.response.data.error);
+      setErrMessage(err.response.data.error);
     }
   };
 

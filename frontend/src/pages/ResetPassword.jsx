@@ -5,24 +5,24 @@ import axios from "axios";
 function ResetPassword() {
   const { token } = useParams();
   const [newPassword, setNewPassword] = useState("");
-    const [message, setMessage] = useState("");
-    const [errMessage, setErrMessage] = useState("");
+  const [message, setMessage] = useState("");
+  const [errMessage, setErrMessage] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://password-reset-3i0a.onrender.com//api/auth/reset-password",
+        "https://password-reset-3i0a.onrender.com/api/auth/reset-password",
         {
           resetToken: token,
           newPassword,
         }
       );
-        setMessage(response.data.message);
-        setErrMessage("");
+      setMessage(response.data.message);
+      setErrMessage("");
     } catch (err) {
-        setMessage(err.response.data.error);
-        setErrMessage(err.response.data.error);
+      setMessage(err.response.data.error);
+      setErrMessage(err.response.data.error);
     }
   };
 
