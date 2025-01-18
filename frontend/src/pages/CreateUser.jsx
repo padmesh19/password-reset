@@ -59,9 +59,9 @@ function CreateUser({onClose}) {
             Create User
           </button>
           {message && errMessage ? (
-            <p className="text-red-600 font-semibold text-center">{message}</p>
+            <p className="text-red-600 pb-4 font-semibold text-center">{message}</p>
           ) : (
-            <p className="text-green-600 font-semibold text-center">
+            <p className="text-green-600 pb-4 font-semibold text-center">
               {message}
             </p>
           )}
