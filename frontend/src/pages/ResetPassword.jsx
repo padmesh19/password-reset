@@ -11,10 +11,13 @@ function ResetPassword() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/reset-password", {
-        resetToken: token,
-        newPassword,
-      });
+      const response = await axios.post(
+        "https://password-reset-3i0a.onrender.com//api/auth/reset-password",
+        {
+          resetToken: token,
+          newPassword,
+        }
+      );
         setMessage(response.data.message);
         setErrMessage("");
     } catch (err) {

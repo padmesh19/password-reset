@@ -10,7 +10,10 @@ function ForgetPassword() {
       e.preventDefault();
       
     try {
-        const response = await axios.post(`http://localhost:5000/api/auth/forget-password`, { email });
+        const response = await axios.post(
+          `https://password-reset-3i0a.onrender.com//api/auth/forget-password`,
+          { email }
+        );
         setMessage(response.data.message);
         setErrMessage("");
     } catch (err) {
