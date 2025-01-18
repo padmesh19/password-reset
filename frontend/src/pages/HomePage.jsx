@@ -13,11 +13,11 @@ const HomePage = () => {
             onClick={() => {
               setIsModalOpen(true);
             }}
-            className="bg-blue-500 rounded text-center text-white p-2 w-full"
+            className="bg-blue-500 font-semibold rounded text-center text-white p-2 w-full"
           >
             Create User
           </button>
-          <Link to="/forget-password" className="bg-blue-500 rounded text-center text-white p-2 w-full">
+          <Link to="/forget-password" className="bg-blue-500 font-semibold rounded text-center text-white p-2 w-full">
             Forget password
           </Link>
         </div>

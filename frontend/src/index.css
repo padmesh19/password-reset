@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.roboto{
-  font-family: "Roboto", serif;
+.comic-neue {
+  font-family: "Comic Neue", serif;
 }
 
 /* width */

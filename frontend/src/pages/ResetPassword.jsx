@@ -43,7 +43,7 @@ function ResetPassword() {
         />
         <button
           type="submit"
-          className="bg-blue-500 rounded text-white p-2 w-full"
+          className="bg-blue-500 font-semibold rounded text-white p-2 w-full"
         >
           Reset Password
         </button>
