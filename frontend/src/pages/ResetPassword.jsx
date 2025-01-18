@@ -27,7 +27,7 @@ function ResetPassword() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-500 flex items-center justify-center">
+    <div className="min-h-screen bg-gradient-to-tr from-slate-800 to-slate-600 flex items-center justify-center">
       <form
         className="w-1/2 lg:w-1/3 bg-white p-4 rounded-lg"
         onSubmit={handleSubmit}
